@@ -1,0 +1,132 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* расстояние между ячейками */
+}
+
+.product {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin: 0px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Тень */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ef4444;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;    
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+}
+
+.new-price {
+    color: #16a34a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-cart {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-cart:hover {
+    background: #6366f1;
+    transform: translateY(-2px);
+}
+
+.btn-cart:active {
+    background: #4338ca;
+    transform: translateY(0);
+}
+
+.item:hover { /* при наведении */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+.item h3 {
+    margin: 12px 12px 6px;
+}
+
+.item p {
+    margin: 0px 12px 16px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: #fff
+}
+
+.btn:hover {
+    background: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(99, 102, 241, 0.35);
+}
+
+.btn:active {
+    background: #4338ca;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(67,56,202,0.35);
+}
+
+.btn:focus-visible {
+  outline: 3px solid #22d3ee; /* бирюзовый контур */
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px){
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn{
+        display: block;
+        width: calc(100% - 51px);
+        margin: 0px 12px;
+    }
+}

@@ -1,0 +1,17 @@
+.social {
+    display: flex;
+    justify-content: space-around; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+} 
+
+/* Для телефонов */
+@media (max-width: 600px){
+    .social {
+        flex-direction: column; /* вместо ряда — колонка */
+        gap: 15px; /* расстояние между элементами */
+    }
+}

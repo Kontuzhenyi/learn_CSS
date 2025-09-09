@@ -1,0 +1,26 @@
+.social {
+    display: flex;
+    justify-content: space-around; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+} 
+
+.social2 {
+    display: flex;
+    justify-content: space-between; /* выравнивание по горизонтали */
+} 
+
+.social3 {
+    display: flex;
+    justify-content: flex-end; /* выравнивание по горизонтали */
+    align-items: flex-end;
+}
+
+.social4 {
+    display: flex;
+    justify-content: space-evenly; /* выравнивание по горизонтали */
+    align-items: flex-end;
+}

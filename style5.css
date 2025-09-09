@@ -1,0 +1,44 @@
+.social {
+    display: flex;
+    justify-content: space-around; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    height: 80px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    animation: blink 2s infinite;
+}
+
+/* Для телефонов */
+@media (max-width: 600px){
+    .social {
+        flex-direction: column; /* вместо ряда — колонка */
+        gap: 15px; /* расстояние между элементами */
+    }
+}
+
+p {
+    transition: font-size 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), color 0.1s; /* плавность */
+}
+
+p:hover { /* при наведении */
+    color: rgb(164, 224, 207);
+    font-size: 50px;
+}
+
+p:active { /* при клике */
+    color: rgb(255, 0, 0);
+    transition: 0.1s;
+}
+
+@keyframes blink {
+    0%   { color: rgb(72, 197, 255); }
+    50%  { color: rgb(122, 252, 154); }
+    100% { color: rgb(72, 197, 255); }
+}
